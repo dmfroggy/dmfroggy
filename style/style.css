@@ -1,0 +1,192 @@
+*{margin: 0;
+;}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "danthemanimage aboutme ."
+    "music music music"
+    "blank bookings blank2";
+    background-image: url('../images/headerimage.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% ;
+}
+
+.aboutme
+{
+    grid-area: aboutme;
+    margin-top:50px;
+    margin-left:30px;
+    background-size: contain;
+        color: white;
+}
+
+header{
+    background-color:black ;
+    padding-left:5%;
+    padding-top:15px;
+    height:80px;
+    
+}
+
+.logo {
+    float:left; height:80px;
+    padding-right:30%;
+}
+
+.socialheader {
+    width: 400px; float:left; height:80px;
+    vertical-align: bottom;
+
+}
+
+.music{
+    grid-area: music;
+    margin-top:105px;
+    border-top:5px darkred solid;
+}
+.socialheader img {
+    margin-left:30px;
+    float: left;
+}
+
+* {
+    font-family: monospace;
+}
+
+.notimp {
+    font-size: 36px;;
+}
+
+h1{font-size: 48px;}
+
+.aboutme > p,span {
+    font-size: 24px;
+}
+
+.socialheader img {
+    
+    vertical-align: middle;
+
+}
+
+.yticon{    padding-top:5px;
+
+}
+
+.redtop {
+    height:5em;
+    background-color: darkred;
+}
+
+.danthemanimage img {
+    border-radius: 50%;
+    float:right;
+}
+
+.danthemanimage{
+    grid-area: danthemanimage;
+    width:500px;
+margin-top:50px;}
+
+.redtop ul {
+list-style-type: circle;
+display: table;
+height:5em;
+padding:1em;
+width:712px;
+margin: 0 auto;
+
+}
+
+.redtop li {
+    display:table-cell;
+    float:left;
+    color:white;
+    font-size: 30px;
+    padding-left:7%;
+    vertical-align: middle;
+    height:5em;
+    text-align: center;
+}
+
+hr{
+    color:red;
+    width:1em;
+}
+
+.video1 {
+    width: 557px;
+    height: 315px;
+}
+
+.music:hover{
+    background-color: darkred;
+    transition: 1.5s;
+}
+
+.music{
+    background-image: none !important;
+    border-bottom: 5px black solid;
+    border-top: 5px black solid;
+
+}
+
+.bandimage{
+width:500px;    
+}
+
+.music > div {float: left;
+   height: 818.312}
+
+.video2 {
+    max-width:400px;
+}
+
+.video2 iframe{
+    width: 400px;
+    height:300px;
+}
+
+.music div{
+    border: 3px solid transparent;
+}
+
+.music div:hover{
+    background-color: grey;
+    transition: 1s;
+}
+
+.bookings{
+    grid-area:bookings;
+    text-align: center;
+    background-color: darkred;
+    padding-bottom:40px;
+}
+
+.footer{
+    background-color:black;
+    height:60px;
+    padding-top:40px;
+    margin-top: 10px;
+}
+
+.blank {grid-area: blank;
+background-color: darkred;}
+
+
+.blank2 {grid-area: blank2;
+    background-color: darkred;}
+
+    .container{  font-size:36px;}
+    
+    .form-group {height:50px;}
+
+    .container{ text-align: start;}
+
+ label {width:300px;
+display:inline-block}
+
+i {width:50px;
+    display:inline-block;
