@@ -275,11 +275,15 @@ i {width:50px;
 
   @media (max-width: 767px)  {
     .danthemanimage {
-        width:250px;
+        width:100px;
     margin-top:50px;}
 
     .danthemanimage img {float: left;
-    margin-left:2em;}
+    margin-left:0em;
+    padding:0;
+    margin:0;
+border-radius: 0%;
+width:100%}
 
     .logo{
         margin:0 0;
@@ -301,10 +305,13 @@ i {width:50px;
         background-image: url('../images/headerimage.jpg');
         background-repeat: no-repeat;
         background-size: auto 500px;
+        grid-template-columns: .5fr 2fr 1fr;
         grid-template-areas: "danthemanimage aboutme aboutme"
          "music music music"
          "blank bookings blank2";
     }
+
+    .redtop ul {visibility: hidden;}
         .aboutme {
 width: fit-content;
         }
