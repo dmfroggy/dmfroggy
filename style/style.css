@@ -64,6 +64,7 @@ header{
 .socialheader img {
     margin-left:60px;
     float: left;
+    height:50px;
 }
 
 * {
@@ -282,13 +283,19 @@ i {width:50px;
 
     .logo{
         margin:0 0;
-        padding-right:5%;
+        padding-right:1%
     }
 
     header{ padding:.3em;
     padding-left:1em;}
 
-    .socialheader{padding-top:.5em;}
+    .socialheader{padding-top:.5em;
+    }
+
+    .socialheader img{ height:40px !important;
+        margin-left:1%;
+
+    }
 
     .grid{
         background-image: url('../images/headerimage.jpg');
