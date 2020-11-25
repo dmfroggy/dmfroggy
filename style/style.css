@@ -5,7 +5,10 @@
         box-sizing: content-box;
         scroll-behavior: smooth;}
 
+      @media(min-width:768px)  {
         
+        .logo img {width:200px;}
+
 .grid {
     display:grid;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -91,6 +94,15 @@ h1{font-size: 48px;}
 
 }
 
+.music{display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "video1 image2 video3"
+"image1 video2 image3";}
+
+.music img
+{
+height:auto;
+}
 .redtop {
     height:5em;
     background-color: darkred;
@@ -118,7 +130,7 @@ list-style-type: circle;
 display: table;
 height:5em;
 padding:1em;
-width:712px;
+width:800px;
 margin: 0 auto;
 
 }
@@ -139,11 +151,6 @@ hr{
     width:1em;
 }
 
-.video1 {
-    width: 557px;
-    height: 315px;
-}
-
 .music:hover{
     background-color: darkred;
     transition: 1.5s;
@@ -160,26 +167,14 @@ hr{
 width:500px;    
 }
 
-.music > div {float: left;
-   height: 818.312}
-
-.video2 {
-    max-width:400px;
+.bandimage iframe{
+height:400px;
 }
+.music > div {padding:.2em;
+  }
 
-.video2 iframe{
-    width: 400px;
-    height:300px;
-}
 
-.music div{
-    border: 3px solid transparent;
-}
 
-.music div:hover{
-    background-color: grey;
-    transition: 1s;
-}
 
 .bookings{
     grid-area:bookings;
@@ -198,6 +193,46 @@ width:500px;
 .blank {grid-area: blank;
 background-color: darkred;}
 
+#video1 iframe, #video2 iframe, #video3 iframe{
+    width:100%;
+    height:100%;
+}
+
+#video1{
+    grid-area: video1;
+}
+
+#video2{
+    grid-area: video2;
+}
+
+#video3{
+    grid-area: video3;
+}
+
+#image1{
+    grid-area: image1;
+}
+#image2{
+    grid-area: image2;
+}
+#image3{
+    grid-area: image3;
+}
+
+#image1 img , #image2 img , #image3 img{
+    max-width:100%;
+max-height:100%;
+object-fit: contain;
+}
+
+#image3 img{
+    width:100%;
+}
+
+.music iframe{
+height:fit-content;
+}
 
 .blank2 {grid-area: blank2;
     background-color: darkred;}
@@ -234,7 +269,6 @@ i {width:50px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -272,8 +306,38 @@ i {width:50px;
     margin: 0 30px 0 10px;
     font-size: 1.5em;
   }
+}
 
   @media (max-width: 767px)  {
+
+    .logo img {width:100px;}
+    
+header{
+    background-color:black ;
+    padding-left:5%;
+    padding-top:0px;
+    height:50px;
+    padding: 5px;
+    display: flex;
+    align-items: baseline;
+    padding-top:0px !important;
+
+}
+
+.logo {
+    float:left; height:50px;
+    padding-right:15%;
+    padding-top:5px;
+}
+
+.socialheader {
+    width: 400px; float:left; height:60px;
+    vertical-align: bottom;
+    padding-top:10px;
+
+}
+
+
     .danthemanimage {
         width:100px;
     margin-top:50px;}
@@ -294,6 +358,7 @@ width:100%}
     padding-left:1em;}
 
     .socialheader{padding-top:.5em;
+        width:100%;
     }
 
     .socialheader img{ height:40px !important;
@@ -309,13 +374,28 @@ width:100%}
         grid-template-areas: "danthemanimage aboutme aboutme"
          "music music music"
          "blank bookings blank2";
-    }
+           background-image: url('../images/headerimage.jpg');
+   background-repeat: no-repeat;
+   background-size: 130% ;
+}
+    
 
     .redtop ul {visibility: hidden;}
         .aboutme {
+            background-color: rgba(255, 255, 255, 0.5);
 width: fit-content;
         }
        
+    .music > div{
+        width:100%;
+    }
+
+    .music img {width:100%;}
+        
     
 }
 
+*{
+    font-family: "Raleway" !important;
+    font-weight: 500 !important;;
+}
